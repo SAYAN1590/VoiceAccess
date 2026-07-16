@@ -1,0 +1,4 @@
+streamlit>=1.39.0
+pydub>=0.25.1
+# Uncomment when replacing the mock LLM integration.
+# openai>=1.0.0

@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Locally generated recordings
+temp_audio/*
+!temp_audio/.gitkeep
