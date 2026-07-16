@@ -291,7 +291,6 @@ def reset_recording() -> None:
         "llm_response": None,
         "tts_path": None,
         "error_message": None,
-        "notice_message": "Current recording cleared. You can now make a new recording.",
     }.items():
         st.session_state[key] = value
 
@@ -426,17 +425,12 @@ def main() -> None:
         st.session_state.analysis_prompt = analysis_prompt
 
     st.title("🎙️ Voice Accessibility Assistant")
-    if st.session_state.notice_message:
-        st.info(st.session_state.notice_message, icon="ℹ️")
-        st.session_state.notice_message = None
-   
     st.markdown(
         """
         <div class="helper-box" role="region" aria-label="Voice input instructions">
           <strong>Voice input:</strong> Select the microphone, speak clearly, then stop
           recording. Your audio is converted to MP3 locally before it is processed by the selected LLM.
         </div>
-        
         """,
         unsafe_allow_html=True,
     )
