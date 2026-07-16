@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+demo.py
+myvnv
+.streamlit/secrets.toml.example
 
 # Streamlit secrets
 .streamlit/secrets.toml
