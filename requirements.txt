@@ -1,4 +1,6 @@
 streamlit>=1.39.0
 pydub>=0.25.1
-# Uncomment when replacing the mock LLM integration.
-# openai>=1.0.0
+audioop-lts>=0.2.2
+google-genai>=0.1.0
+openai>=1.0.0
+gTTS>=2.5.4
